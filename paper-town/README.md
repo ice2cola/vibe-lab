@@ -41,8 +41,6 @@ npm test 运行运动与环境逻辑测试。先启动开发服务，再运行 n
 
 浏览器测试使用 Playwright；首次运行前安装浏览器：npx playwright install chromium。可使用 TEST_URL 指向其他本地测试地址，或设置 BROWSER_CHANNEL=msedge 使用已安装的 Edge。截图和测试报告输出到 artifacts，不纳入版本控制。
 
-![小星球环游公路展示：巴士、商铺与花园组成的球面微缩小镇](images/preview.png)
-
 ## 运行要求与限制
 
 需要支持 WebGL 的现代浏览器。DPR 上限为 1.5，帧率受设备 GPU 与窗口分辨率影响；桌面模拟手机视口的结果不能替代手机真机表现。时间和季节由用户手动切换，无后端持久化。静态部署须将 dist 作为网站根目录，当前资源 URL 使用 /assets/ 路径。
