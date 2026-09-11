@@ -1,0 +1,22 @@
+{
+  "name": "paper-town",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5191 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test tests/planet-motion.test.js tests/planet-environment.test.js",
+    "test:browser": "node tests/planet-browser.mjs && node tests/seasons-browser.mjs && node tests/responsive-browser.mjs",
+    "test:soak": "node tests/seasons-soak.mjs"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.0",
+    "@playwright/test": "^1.55.0"
+  },
+  "description": "Interactive miniature planet with an endless bus route, seasons and time controls."
+}
