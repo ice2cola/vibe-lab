@@ -2,6 +2,8 @@
 
 一个纯前端实时 3D 微缩小镇。奶油色巴士沿球面公路循环行驶，支持四季、时间和有限范围的视角调整，适配电脑、手机横屏与竖屏。
 
+![小星球环游公路展示：巴士、商铺与花园组成的球面微缩小镇](images/preview.png)
+
 ## 运行
 
 使用 Node.js 22.12 或更新版本。
@@ -38,6 +40,8 @@ Three.js / WebGL 负责渲染，GLB 保存模型，GLSL 控制道路、天空和
 npm test 运行运动与环境逻辑测试。先启动开发服务，再运行 npm run test:browser 验证循环行驶、交互和屏幕适配，npm run test:soak 执行 180 秒资源稳定性测试。
 
 浏览器测试使用 Playwright；首次运行前安装浏览器：npx playwright install chromium。可使用 TEST_URL 指向其他本地测试地址，或设置 BROWSER_CHANNEL=msedge 使用已安装的 Edge。截图和测试报告输出到 artifacts，不纳入版本控制。
+
+![小星球环游公路展示：巴士、商铺与花园组成的球面微缩小镇](images/preview.png)
 
 ## 运行要求与限制
 
